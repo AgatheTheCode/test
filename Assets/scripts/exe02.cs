@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class exe02 : MonoBehaviour
 {
-    private float startTime,
+    private float startTime;
     private bool Direction = false;
 
     public MeshRenderer rend;
@@ -14,7 +14,7 @@ public class exe02 : MonoBehaviour
 
 void Start()
 {
-    if(!rend)Debug.log("No Mesh Renderer");
+    if(!rend) Debug.Log("No Mesh Renderer");
     rend.material.SetColor("_Color", Color1);
     startTime = Time.time;
 }
